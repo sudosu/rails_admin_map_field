@@ -29,7 +29,7 @@ Then, add in your `config/initializers/rails_admin.rb` initializer:
 RailsAdmin.config do |config|
   config.model User do
     configure :latitude, :map
-    configure :longitude { visible false }
+    configure(:longitude) { visible false }
   end
 end
 ```
